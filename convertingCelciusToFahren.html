@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+    
+        <script>
+          //°C = 5/9 (°F - 32).
+          const degFahren = prompt("Enter the degrees in Fahrenheit");
+          const degCel = toCelcius(degFahren);
+          fahrenMsg(degFahren)
+
+          //convert input to celcius
+
+          function toCelcius(fahrenheit)
+          {
+            return (5/9) * (fahrenheit - 32);
+
+          }
+
+
+
+
+//***********************************************************************************************
+          function fahrenMsg(fahrenheit){ 
+        //   degCel = (5 / 9) * (degFahren - 32);
+          let msg = degFahren + "\xB0 Fahrenheit is " + degCel + "\xB0 ";     
+           if (degFahren < 69) {
+            alert(msg + "\n Oh that's cold!");
+          } 
+          else if (degFahren > 69 && degFahren < 83) {
+            alert(msg + "\n Temperature is just right!");
+          } 
+          else {
+            alert(msg + "\n Its way too hot!");
+          }
+        }
+        </script>
+      </body>
+    </html>
+</html>
